@@ -5,8 +5,14 @@
   "main": "index.html",
   "scripts": {
     "build": "python build_app.py",
-    "capacitor:add:android": "npx cap add android",
-    "capacitor:build": "npx cap sync"
+    "prepare:www": "python prepare_www.py",
+    "cap:add:android": "npm run prepare:www && npx cap add android",
+    "cap:sync": "npm run prepare:www && npx cap sync android"
+  },
+  "dependencies": {
+    "@capacitor/android": "^6.2.0",
+    "@capacitor/cli": "^6.2.0",
+    "@capacitor/core": "^6.2.0"
   },
   "keywords": [
     "fire-alarm",

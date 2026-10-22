@@ -1,8 +1,7 @@
 {
   "appId": "com.teledata.one.manual",
-  "appName": "Teledata One Manual",
-  "webDir": ".",
-  "bundledWebRuntime": false,
+  "appName": "Teledata One",
+  "webDir": "www",
   "android": {
     "allowMixedContent": true
   }
