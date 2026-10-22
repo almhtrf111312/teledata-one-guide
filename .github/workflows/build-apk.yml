@@ -37,10 +37,6 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: '17'
-          cache: 'gradle'
-
-      - name: Set up Android SDK
-        uses: android-actions/setup-android@v3
 
       - name: Set up Node.js 20
         uses: actions/setup-node@v4
@@ -61,6 +57,10 @@ jobs:
           fi
           echo "Syncing web assets to Android project..."
           npx cap sync android
+
+      - name: Accept Android SDK Licenses
+        run: |
+          yes | "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" --licenses || true
 
       - name: Build Android Debug APK
         run: |
