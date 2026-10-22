@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+dump.log
+figures_and_pages.txt
+test.txt
+err.txt
+.playwright-mcp/
+node_modules/
+android/

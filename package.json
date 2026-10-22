@@ -1,0 +1,22 @@
+{
+  "name": "teledata-one-guide",
+  "version": "1.3.7",
+  "description": "Interactive Offline User & Installation Manual for Teledata One Fire Alarm Control Panel",
+  "main": "index.html",
+  "scripts": {
+    "build": "python build_app.py",
+    "capacitor:add:android": "npx cap add android",
+    "capacitor:build": "npx cap sync"
+  },
+  "keywords": [
+    "fire-alarm",
+    "teledata-one",
+    "user-manual",
+    "installation-guide",
+    "pwa",
+    "capacitor",
+    "offline"
+  ],
+  "author": "almhtrf111312",
+  "license": "MIT"
+}

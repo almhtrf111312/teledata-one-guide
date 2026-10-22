@@ -1,0 +1,17 @@
+{
+  "name": "Teledata One Fire Alarm Manual",
+  "short_name": "Teledata One",
+  "description": "دليل المستخدم والتركيب الذكي للوحة إنذار الحريق Teledata One",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0f172a",
+  "theme_color": "#0f172a",
+  "icons": [
+    {
+      "src": "assets/images_webp/page_1_img_2_9.webp",
+      "sizes": "512x512",
+      "type": "image/webp"
+    }
+  ]
+}
